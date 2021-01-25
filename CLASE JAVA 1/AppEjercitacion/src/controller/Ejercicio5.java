@@ -1,10 +1,14 @@
 package controller;
-
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Desarrollar un programa para mostrar por consola los primeros n números naturales
+ * que tienen al menos m digitos d, siendo n,m y d valores que ingresarà por consola.
+ */
 public class Ejercicio5 {
+
     public static int cuentaOcc(String digit, String numero){
         Pattern pattern = Pattern.compile(digit);
         Matcher matcher = pattern.matcher(numero);

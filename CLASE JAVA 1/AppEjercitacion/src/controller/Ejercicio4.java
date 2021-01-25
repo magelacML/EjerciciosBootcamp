@@ -1,7 +1,10 @@
 package controller;
-
 import java.util.Scanner;
 
+/**
+ * Desarrollar un programa para mostrar por consola los primeros n números primos,
+ * siendo n un valor que el usuario ingresarà por consola.
+ */
 public class Ejercicio4 {
     public static boolean esPrimo(int n){
 

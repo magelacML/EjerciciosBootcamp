@@ -1,11 +1,10 @@
 package controller;
-
-// Desarrollar un programa para mostrar los primeros n
-// números pares, siendo n un valor que el
-// usuario ingresará por consola.
-
 import java.util.Scanner;
 
+/***
+ * Desarrollar un programa para mostrar los primeros n números pares,
+ * siendo n un valor que el usuario ingresará por consola.
+ */
 public class Ejercicio1 {
 
     public static void main(String[] args) {

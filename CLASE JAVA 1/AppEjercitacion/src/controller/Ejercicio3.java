@@ -1,7 +1,11 @@
 package controller;
-
 import java.util.Scanner;
 
+
+/**
+ * Desarrollar un programa para informar si un número n es primo o no,
+ * siendo n un valor que el usuario ingresarà por consola.
+ */
 public class Ejercicio3 {
 
     public static boolean esPrimo(int n){
