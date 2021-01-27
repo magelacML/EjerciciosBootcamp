@@ -1,4 +1,4 @@
-package controller;
+package controller.Ejercicios;
 import java.util.Scanner;
 
 /**

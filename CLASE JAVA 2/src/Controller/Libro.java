@@ -39,13 +39,14 @@ public class Libro {
         this.autor = autor;
     }
 
-    public boolean isPrestamo() {
+    public boolean getPrestamo() {
         return prestamo;
     }
 
     public void setPrestamo(boolean prestamo) {
         this.prestamo = prestamo;
     }
+
 
     public void Prestar(){
         this.prestamo = true;
@@ -55,6 +56,7 @@ public class Libro {
         this.prestamo = false;
     }
 
+    @Override
     public String toString(){
         return getTitulo()+", "+getIsbn()+", "+getAutor();
     }

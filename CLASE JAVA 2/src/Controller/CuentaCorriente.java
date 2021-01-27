@@ -5,6 +5,16 @@ public class CuentaCorriente {
         private double saldo;
         private int numCuenta;
 
+        public CuentaCorriente(int numCuenta, double saldo){
+            this.saldo = saldo;
+            this.numCuenta = numCuenta;
+        }
+
+        public CuentaCorriente(){
+            this.saldo = 0;
+            this.numCuenta = (int) Math.random();
+        }
+
         public double getSaldo(){
             return saldo;
         }
@@ -19,25 +29,17 @@ public class CuentaCorriente {
             this.numCuenta = numCuenta;
         }
 
-
-        public CuentaCorriente(int numCuenta, double saldo){
-            this.saldo = saldo;
-            this.numCuenta = numCuenta;
+        public void ingreso (int a){
+            this.saldo = this.saldo + a;
         }
-
-
-
-
-        public CuentaCorriente(int a){
-
+        public void egreso (int a){
+            this.saldo = this.saldo - a;
         }
-
-        public static void ingreso (int a){}
-        public static void egreso (int a){}
-        public static void reintegro (int a){}
-        public static void transferencia (int a){}
-
-        public static void main(String[] args) {
+        public void reintegro (int a){
+            ingreso(a);
+        }
+        public void transferencia (int a){
+            egreso(a);
         }
     }
 

@@ -1,13 +1,11 @@
-package controller;
+package controller.Ejercicios;
 import java.util.Scanner;
 
-
 /**
- * Desarrollar un programa para informar si un número n es primo o no,
+ * Desarrollar un programa para mostrar por consola los primeros n números primos,
  * siendo n un valor que el usuario ingresarà por consola.
  */
-public class Ejercicio3 {
-
+public class Ejercicio4 {
     public static boolean esPrimo(int n){
 
         int contador = 0;
@@ -24,13 +22,19 @@ public class Ejercicio3 {
             return false;
         }
     }
-    public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
 
+    public static void main(String[] args) {
+
+        Scanner scanner=new Scanner(System.in);
         System.out.print("Ingrese un valor n: ");
         int n = scanner.nextInt();
 
-        System.out.println(esPrimo(n));
-
+        for(int i=1;i<=n;i++)
+        {
+            if(esPrimo(i))
+            {
+                System.out.println(i);
+            }
+        }
     }
 }
