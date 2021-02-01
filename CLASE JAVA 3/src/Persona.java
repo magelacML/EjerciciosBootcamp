@@ -24,7 +24,15 @@ public class Persona implements Precedable<Persona>{
     }
 
     @Override
-    public int precedeA(Precedable t) {
-        return 0;
+    public int precedeA(Persona persona) {
+        return getDni() - persona.getDni();
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "dni=" + dni +
+                ", nombre='" + nombre + '\'' +
+                '}';
     }
 }

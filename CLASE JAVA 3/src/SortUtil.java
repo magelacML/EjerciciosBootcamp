@@ -1,5 +1,7 @@
 public class SortUtil {
-    public static <T> void ordenar (Precedable<T> arr[]){
+
+    public static <T> Precedable<T>[] ordenar (Precedable<T> arrPre[]){
+        Precedable<T> arr[] = arrPre.clone();
         for (int i=0; i<arr.length; i++){
             for (int j=0; j<arr.length-1; j++){
                 if ( arr[j].precedeA((T)arr[j+1]) > 0 ){
@@ -9,5 +11,6 @@ public class SortUtil {
                 }
             }
         }
+        return arr;
     }
 }
