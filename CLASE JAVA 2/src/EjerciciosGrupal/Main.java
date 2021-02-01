@@ -1,4 +1,4 @@
-package Controller;
+package EjerciciosGrupal;
 
 public class Main {
     public static void main(String[] args) {

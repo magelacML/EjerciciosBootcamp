@@ -1,22 +1,21 @@
-package com.mercadolibre.calculadora_calorias.controller;
+package com.mercadolibre.starwars.controller;
 
-import com.mercadolibre.calculadora_calorias.model.IngredienteCaloriaDTO;
-import com.mercadolibre.calculadora_calorias.model.PlatoCaloriaDTO;
-import com.mercadolibre.calculadora_calorias.model.PlatoDTO;
-import com.mercadolibre.calculadora_calorias.service.IPlatoService;
+import com.mercadolibre.starwars.model.IngredienteCaloriaDTO;
+import com.mercadolibre.starwars.model.PlatoCaloriaDTO;
+import com.mercadolibre.starwars.model.PlatoDTO;
+import com.mercadolibre.starwars.service.IPlatoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
 @RestController
 @RequestMapping(path = "api/comida")
-public class CaloriasController {
+public class StarWars {
     @Autowired
     private IPlatoService iPlatoService;
 

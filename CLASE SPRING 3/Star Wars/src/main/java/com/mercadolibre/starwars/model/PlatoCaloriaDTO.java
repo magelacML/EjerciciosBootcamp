@@ -1,4 +1,4 @@
-package com.mercadolibre.calculadora_calorias.model;
+package com.mercadolibre.starwars.model;
 
 public class PlatoCaloriaDTO {
     private String nombrePlato;

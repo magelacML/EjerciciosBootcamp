@@ -1,4 +1,4 @@
-package com.mercadolibre.calculadora_calorias.model;
+package com.mercadolibre.starwars.model;
 
 import java.util.ArrayList;
 import java.util.List;

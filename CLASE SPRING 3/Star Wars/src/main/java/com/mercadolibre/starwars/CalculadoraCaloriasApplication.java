@@ -1,4 +1,4 @@
-package com.mercadolibre.calculadora_calorias;
+package com.mercadolibre.starwars;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

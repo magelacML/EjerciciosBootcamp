@@ -1,7 +1,7 @@
-package com.mercadolibre.calculadora_calorias.service;
+package com.mercadolibre.starwars.service;
 
-import com.mercadolibre.calculadora_calorias.model.IngredienteCaloriaDTO;
-import com.mercadolibre.calculadora_calorias.model.PlatoDTO;
+import com.mercadolibre.starwars.model.IngredienteCaloriaDTO;
+import com.mercadolibre.starwars.model.PlatoDTO;
 
 import java.util.List;
 

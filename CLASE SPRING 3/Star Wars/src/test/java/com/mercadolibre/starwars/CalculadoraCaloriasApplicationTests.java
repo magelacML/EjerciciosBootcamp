@@ -1,9 +1,8 @@
-package com.mercadolibre.calculadora_calorias;
+package com.mercadolibre.starwars;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mercadolibre.calculadora_calorias.model.IngredienteDTO;
-import com.mercadolibre.calculadora_calorias.model.PlatoDTO;
+import com.mercadolibre.starwars.model.IngredienteDTO;
+import com.mercadolibre.starwars.model.PlatoDTO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 

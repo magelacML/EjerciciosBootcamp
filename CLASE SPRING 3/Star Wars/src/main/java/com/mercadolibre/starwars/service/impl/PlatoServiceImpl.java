@@ -1,9 +1,9 @@
-package com.mercadolibre.calculadora_calorias.service.impl;
+package com.mercadolibre.starwars.service.impl;
 
-import com.mercadolibre.calculadora_calorias.dao.IComidaRepository;
-import com.mercadolibre.calculadora_calorias.model.IngredienteCaloriaDTO;
-import com.mercadolibre.calculadora_calorias.model.PlatoDTO;
-import com.mercadolibre.calculadora_calorias.service.IPlatoService;
+import com.mercadolibre.starwars.dao.IStarWarsRepository;
+import com.mercadolibre.starwars.model.IngredienteCaloriaDTO;
+import com.mercadolibre.starwars.model.PlatoDTO;
+import com.mercadolibre.starwars.service.IPlatoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,21 +13,21 @@ import java.util.List;
 @Service
 public class PlatoServiceImpl implements IPlatoService {
     @Autowired
-    private IComidaRepository iComidaRepository;
+    private IStarWarsRepository iStarWarsRepository;
 
     @Override
     public Double caloriasTotales(PlatoDTO platoDTO) {
-        return iComidaRepository.caloriasTotales(platoDTO);
+        return iStarWarsRepository.caloriasTotales(platoDTO);
     }
 
     @Override
     public List<IngredienteCaloriaDTO> caloriasPorIngrediente(PlatoDTO platoDTO) {
-        return iComidaRepository.caloriasPorIngrediente(platoDTO);
+        return iStarWarsRepository.caloriasPorIngrediente(platoDTO);
     }
 
     @Override
     public IngredienteCaloriaDTO ingredienteConMasCalorias(PlatoDTO platoDTO) {
-        List<IngredienteCaloriaDTO> ingredienteCaloriaDTOS = iComidaRepository.caloriasPorIngrediente(platoDTO);
+        List<IngredienteCaloriaDTO> ingredienteCaloriaDTOS = iStarWarsRepository.caloriasPorIngrediente(platoDTO);
         return ingredienteCaloriaDTOS.stream().max(Comparator.comparing(IngredienteCaloriaDTO::getCalories)).get();
     }
 }

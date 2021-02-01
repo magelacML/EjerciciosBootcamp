@@ -1,13 +1,11 @@
-package com.mercadolibre.calculadora_calorias.dao.impl;
+package com.mercadolibre.starwars.dao.impl;
 
-import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mercadolibre.calculadora_calorias.dao.IComidaRepository;
-import com.mercadolibre.calculadora_calorias.model.IngredienteCaloriaDTO;
-import com.mercadolibre.calculadora_calorias.model.IngredienteDTO;
-import com.mercadolibre.calculadora_calorias.model.PlatoDTO;
+import com.mercadolibre.starwars.dao.IStarWarsRepository;
+import com.mercadolibre.starwars.model.IngredienteCaloriaDTO;
+import com.mercadolibre.starwars.model.IngredienteDTO;
+import com.mercadolibre.starwars.model.PlatoDTO;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.ResourceUtils;
 
@@ -18,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class ComidaRepositoryImpl implements IComidaRepository {
+public class StarWarsRepositoryImpl implements IStarWarsRepository {
 
     @Override
     public Double caloriasTotales(PlatoDTO platoDTO) {
