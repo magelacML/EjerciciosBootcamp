@@ -1,6 +1,11 @@
+package SaveTheRopa;
+
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Ejercicio Resuelto junto con Federico Nicolas Sepulveda
+ */
 public class Main {
     public static void main(String[] args) {
         List<Prenda> prendaList=new ArrayList<>();
