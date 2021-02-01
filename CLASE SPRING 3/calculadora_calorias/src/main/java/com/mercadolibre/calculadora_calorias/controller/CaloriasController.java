@@ -1,8 +1,8 @@
 package com.mercadolibre.calculadora_calorias.controller;
 
-import com.mercadolibre.calculadora_calorias.model.IngredienteCaloriaDTO;
-import com.mercadolibre.calculadora_calorias.model.PlatoCaloriaDTO;
-import com.mercadolibre.calculadora_calorias.model.PlatoDTO;
+import com.mercadolibre.calculadora_calorias.model.response.IngredienteCaloriaDTO;
+import com.mercadolibre.calculadora_calorias.model.response.PlatoCaloriaDTO;
+import com.mercadolibre.calculadora_calorias.model.request.PlatoDTO;
 import com.mercadolibre.calculadora_calorias.service.IPlatoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import java.util.ArrayList;
 import java.util.List;
 
 

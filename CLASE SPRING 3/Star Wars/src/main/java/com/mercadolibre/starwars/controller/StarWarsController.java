@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/comida")
-public class StarWars {
+public class StarWarsController {
     @Autowired
     private IPlatoService iPlatoService;
 

@@ -1,8 +1,8 @@
 package com.mercadolibre.calculadora_calorias;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mercadolibre.calculadora_calorias.model.request.IngredienteDTO;
-import com.mercadolibre.calculadora_calorias.model.request.PlatoDTO;
+import com.mercadolibre.calculadora_calorias.model.request.AsignaturaDTO;
+import com.mercadolibre.calculadora_calorias.model.request.AlumnoDTO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,32 +22,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class CalculadoraCaloriasApplicationTests {
+class GenerarDiplomaApplicationTests {
 	@Autowired
 	private MockMvc mockMvc;
 
 	private String platoConIngredientesJsonString;
 
-	@BeforeEach
-	public void init() {
-		ObjectMapper objectMapper = new ObjectMapper();
-
-		IngredienteDTO jamonCrudo = new IngredienteDTO("Jamón cocido", 100.0);
-		IngredienteDTO aceitunasNegras = new IngredienteDTO("Aceitunas negras", 50.0);
-
-		PlatoDTO picada = new PlatoDTO("picada");
-		List<IngredienteDTO> ingredientes = new ArrayList<>();
-		ingredientes.add(jamonCrudo);
-		ingredientes.add(aceitunasNegras);
-		picada.setIngredientes(ingredientes);
-
-		try {
-			platoConIngredientesJsonString = objectMapper.writeValueAsString(picada);
-			objectMapper.writeValue(new File("src/main/resources/data/platoPrueba.json"), picada);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 
 	@Test
 	void platoDevuelveCaloriasTotalesTest() throws Exception {

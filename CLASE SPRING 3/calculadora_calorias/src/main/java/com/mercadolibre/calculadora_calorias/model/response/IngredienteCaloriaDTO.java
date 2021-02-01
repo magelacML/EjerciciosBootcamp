@@ -1,4 +1,4 @@
-package com.mercadolibre.calculadora_calorias.model;
+package com.mercadolibre.calculadora_calorias.model.response;
 
 public class IngredienteCaloriaDTO {
     private String name;

@@ -1,4 +1,4 @@
-package com.mercadolibre.calculadora_calorias.model;
+package com.mercadolibre.calculadora_calorias.model.request;
 
 import java.util.ArrayList;
 import java.util.List;
