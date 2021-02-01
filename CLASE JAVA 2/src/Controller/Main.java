@@ -39,6 +39,13 @@ public class Main {
         System.out.println(fech.toString());
         fech.printGrego();
 
+        // Ejercicio 6
+        System.out.println(StringUtil.rpad("Magela",'c',4));
+        System.out.println(StringUtil.lpad("Magela",'c',4));
+        System.out.println(StringUtil.rtrim("   Magela Carballo"));
+        System.out.println(StringUtil.ltrim("Magela Carballo   "));
+        System.out.println(StringUtil.trim("   Magela Carballo   "));
+        System.out.println(StringUtil.indexOfN("John|Paul|George|Ringo",'|',2));
 
     }
 }
