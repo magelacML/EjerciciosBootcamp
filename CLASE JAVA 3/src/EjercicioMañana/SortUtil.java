@@ -1,3 +1,5 @@
+package EjercicioMañana;
+
 public class SortUtil {
 
     public static <T> Precedable<T>[] ordenar (Precedable<T> arrPre[]){
