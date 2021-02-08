@@ -1,4 +1,4 @@
-package controller.Radix;
+package com.mercadolibre.starwars.Utils;
 
 public class StringUtil {
     public static String[] intToStringArr(int[] arr){

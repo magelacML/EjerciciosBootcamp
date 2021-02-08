@@ -1,8 +1,6 @@
 package com.mercadolibre.starwars.service.impl;
 
 import com.mercadolibre.starwars.dao.IStarWarsRepository;
-import com.mercadolibre.starwars.model.IngredienteCaloriaDTO;
-import com.mercadolibre.starwars.model.PlatoDTO;
 import com.mercadolibre.starwars.service.IPlatoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

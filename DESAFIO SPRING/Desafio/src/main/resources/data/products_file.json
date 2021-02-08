@@ -1,0 +1,122 @@
+[
+  {
+    "id": 100,
+    "name":"Desmalezadora",
+    "category":"Herramientas",
+    "mark":"Makita",
+    "price":9600,
+    "quantity":5,
+    "freeshipping":1,
+    "stars":4
+  },
+  {
+    "id": 110,
+    "name":"Taladro",
+    "category":"Herramientas",
+    "mark":"Black & Decker",
+    "price":12500,
+    "quantity":7,
+    "freeshipping":1,
+    "stars":4
+  },
+  {
+    "id": 120,
+    "name":"Soldadora",
+    "category":"Herramientas",
+    "mark":"Black & Decker",
+    "price":7215,
+    "quantity":10,
+    "freeshipping":1,
+    "stars":3
+  },
+  {
+    "id": 130,
+    "name":"Zapatillas Deportivas",
+    "category":"Deportes",
+    "mark":"Nike",
+    "price":14000,
+    "quantity":4,
+    "freeshipping":1,
+    "stars":5
+  },
+  {
+    "id": 140,
+    "name":"Zapatillas Deportivas",
+    "category":"Deportes",
+    "mark":"Adidas",
+    "price":13650,
+    "quantity":6,
+    "freeshipping":1,
+    "stars":5
+  },
+  {
+    "id": 150,
+    "name":"Camiseta",
+    "category":"Deportes",
+    "mark":"Topper",
+    "price":2300,
+    "quantity":2,
+    "freeshipping":0,
+    "stars":3
+  },
+  {
+    "id": 160,
+    "name":"Redmi Note 9",
+    "category":"Celulares",
+    "mark":"Xiaomi",
+    "price":40000,
+    "quantity":15,
+    "freeshipping":1,
+    "stars":4
+  },
+  {
+    "id": 170,
+    "name":"Smartwatch",
+    "category":"Celulares",
+    "mark":"Noga",
+    "price":1900,
+    "quantity":20,
+    "freeshipping":0,
+    "stars":2
+  },
+  {
+    "id": 180,
+    "name":"Remera",
+    "category":"Indumentaria",
+    "mark":"Taverniti",
+    "price":2300,
+    "quantity":2,
+    "freeshipping":0,
+    "stars":3
+  },
+  {
+    "id": 190,
+    "name":"Chomba",
+    "category":"Indumentaria",
+    "mark":"Taverniti",
+    "price":2400,
+    "quantity":6,
+    "freeshipping":0,
+    "stars":3
+  },
+  {
+    "id": 200,
+    "name":"Medias",
+    "category":"Indumentaria",
+    "mark":"Mistral",
+    "price":500,
+    "quantity":8,
+    "freeshipping":0,
+    "stars":1
+  },
+  {
+    "id": 210,
+    "name":"Short",
+    "category":"Indumentaria",
+    "mark":"Lacoste",
+    "price":3900,
+    "quantity":9,
+    "freeshipping":1,
+    "stars":3
+  }
+]
