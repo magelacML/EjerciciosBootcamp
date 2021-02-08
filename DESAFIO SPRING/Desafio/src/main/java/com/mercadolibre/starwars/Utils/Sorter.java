@@ -4,9 +4,17 @@ import com.mercadolibre.starwars.model.response.ProductDTO;
 
 import java.util.*;
 
+/**
+ * Clase auxiliar para realizar ordenamientos
+ */
 public class Sorter {
 
-    public static List<ProductDTO> OrdenarNombreAsc(List<ProductDTO> list){
+    /**
+     * MEtodo para ordenar una lista de productos por su nombre de forma ascendente.
+     * @param list lista de productos
+     * @return lista de produtos ordenada
+     */
+    public static List<ProductDTO> sortNameAsc(List<ProductDTO> list){
 
         Map<ProductDTO,String> hashMap = new HashMap<ProductDTO,String>();
 
@@ -23,23 +31,37 @@ public class Sorter {
         return valoresOrdenados;
     }
 
-    public static List<ProductDTO> OrdenarNombreDesc(List<ProductDTO> list){
-        List<ProductDTO> valoresOrdenados = OrdenarNombreAsc(list);
+    /**
+     * Metodo para ordenar la lista de productos por su nombre de forma descendente
+     * @param list lista de productos
+     * @return lista de productos ordenada de forma descendente
+     */
+    public static List<ProductDTO> sortNameDesc(List<ProductDTO> list){
+        List<ProductDTO> valoresOrdenados = sortNameAsc(list);
         Collections.reverse(valoresOrdenados);
 
         return valoresOrdenados;
 
     }
 
-
-    public static List<ProductDTO> OrdenarPrecioMayor(List<ProductDTO> list){
-        List<ProductDTO> valoresOrdenados = OrdenarPrecioMenor(list);
+    /**
+     * Metodo para ordenar una lista de productos de mayor precio a menor precio
+     * @param list lista de productos a ordenar
+     * @return lista de productos ordenada de mayor a menor precio
+     */
+    public static List<ProductDTO> sortPriceDesc(List<ProductDTO> list){
+        List<ProductDTO> valoresOrdenados = sortPriceAsc(list);
         Collections.reverse(valoresOrdenados);
 
         return valoresOrdenados;
     }
 
-    public static List<ProductDTO> OrdenarPrecioMenor(List<ProductDTO> list){
+    /**
+     * Metodo para ordenar una lista de productos de menor a mayor precio
+     * @param list lista de productos a ordenar
+     * @return lista de productos ordenados de menor a meyor precio.
+     */
+    public static List<ProductDTO> sortPriceAsc(List<ProductDTO> list){
         Map<ProductDTO,Integer> hashMap = new HashMap<ProductDTO,Integer>();
 
         for (ProductDTO p: list) {

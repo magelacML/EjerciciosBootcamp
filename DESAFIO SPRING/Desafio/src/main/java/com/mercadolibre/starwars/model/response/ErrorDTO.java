@@ -2,11 +2,11 @@ package com.mercadolibre.starwars.model.response;
 
 public class ErrorDTO {
     private String name;
-    private String descripcion;
+    private String description;
 
-    public ErrorDTO(String name, String descripcion) {
+    public ErrorDTO(String name, String description) {
         this.name = name;
-        this.descripcion = descripcion;
+        this.description = description;
     }
 
     public ErrorDTO() {
@@ -21,12 +21,12 @@ public class ErrorDTO {
         this.name = name;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
 

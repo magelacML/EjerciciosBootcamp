@@ -1,11 +1,11 @@
 package com.mercadolibre.starwars.model.request;
 
-public class ProductoCompraDTO {
+public class ProductPurchaseDTO {
     private Integer productId;
     private Integer discount;
     private Integer quantity;
 
-    public ProductoCompraDTO(Integer productId, Integer discount, Integer quantity) {
+    public ProductPurchaseDTO(Integer productId, Integer discount, Integer quantity) {
         this.productId = productId;
         this.discount = discount;
         this.quantity = quantity;
